@@ -1,0 +1,4 @@
+{
+  "note": "Copy to model.json on the board once coefficients have been fitted against laboratory haemoglobin. Hb = c0 + c1*x530 + c2*x590 + c3*x660 + c4*x810.",
+  "coefficients": null
+}

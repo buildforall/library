@@ -1,0 +1,15 @@
+ref,qty,part,notes,unit_usd
+U1,1,ESP32-C3 SuperMini,"Microcontroller board, USB-C, onboard 3V3 LDO",3.00
+U9,1,TP4056 USB-C module,1 A Li-ion charger with DW01 protection,0.60
+BT1,1,LiPo cell 3.7 V 400 mAh,With JST-PH lead,3.20
+SW1,1,SS12D00 slide switch,Main power,0.10
+"R8, R9",2,100 kΩ resistor,Battery voltage divider to GPIO0,0.02
+U2,1,ADS1115 breakout,"16-bit ADC, I²C",2.50
+U4,1,OPT101 photodiode + TIA,DIP-8,4.50
+D1–D5,5,"LEDs 530, 590, 660, 810, 940 nm","3 mm or 5 mm, narrow band",0.30
+Q1–Q5,5,2N7002 N-MOSFET,LED switches,0.05
+R10–R14,5,Series resistors 68–150 Ω,Set per LED for equal DC level,0.02
+U3,1,SSD1306 OLED 0.96 in,"128×64, I²C",2.50
+SW2,1,6 mm tactile switch,,0.05
+LS1,1,Passive piezo buzzer 12 mm,,0.30
+Mech,1,Black PETG print + foam liner,Light-tight finger clip,1.50
