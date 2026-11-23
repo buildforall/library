@@ -1,0 +1,14 @@
+ref,qty,part,notes,unit_usd
+U1,1,ESP32-C3 SuperMini,"Microcontroller board, USB-C, onboard 3V3 LDO",3.00
+U9,1,TP4056 USB-C module,1 A Li-ion charger with DW01 protection,0.60
+BT1,1,LiPo cell 3.7 V 300 mAh,With JST-PH lead,3.00
+SW1,1,SS12D00 slide switch,Main power,0.10
+"R8, R9",2,100 kΩ resistor,Battery voltage divider to GPIO0,0.02
+U2,1,LSM6DS3TR-C breakout,"6-axis IMU, I²C",3.50
+"M1, M2",2,10 mm coin vibration motor,3 V ERM,0.40
+Q1,1,AO3400 N-MOSFET,Low-side motor switch,0.05
+D1,1,1N4148 diode,Flyback across motors,0.02
+R3,1,100 kΩ resistor,Gate pull-down,0.01
+SW2,1,6 mm tactile switch,,0.05
+Mech,1,Hook-and-loop strap 30 mm,Above the ankle,1.50
+Mech,1,PETG print,"Pod, about 14 g",0.50
