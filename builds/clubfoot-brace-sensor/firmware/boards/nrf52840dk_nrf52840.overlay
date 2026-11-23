@@ -1,0 +1,28 @@
+/* Nordic nRF52840 DK, for bench work: TMP117 on i2c0 (P0.26 SDA, P0.27 SCL),
+ * Button 1 as the read-out button, LED1 as the heartbeat. */
+
+/ {
+	fstab {
+		compatible = "zephyr,fstab";
+		lfs: lfs {
+			compatible = "zephyr,fstab,littlefs";
+			mount-point = "/lfs";
+			partition = <&storage_partition>;
+			automount;
+			read-size = <16>;
+			prog-size = <16>;
+			cache-size = <64>;
+			lookahead-size = <32>;
+			block-cycles = <512>;
+		};
+	};
+};
+
+&i2c0 {
+	status = "okay";
+
+	tmp117: tmp117@48 {
+		compatible = "ti,tmp11x";
+		reg = <0x48>;
+	};
+};

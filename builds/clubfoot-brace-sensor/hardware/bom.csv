@@ -1,0 +1,6 @@
+ref,qty,part,notes,unit_usd
+U1,1,Seeed XIAO nRF52840,BLE board with onboard Li-ion charger,9.90
+U2,1,TMP117 breakout,±0.1 °C digital temperature sensor,4.00
+BT1,1,LiPo 3.7 V 100 mAh,401230 cell,2.20
+SW2,1,Sealed tactile switch 6 mm,IP67,0.40
+Mech,1,PETG print + silicone gasket,"Ø36 mm capsule, clip",0.60

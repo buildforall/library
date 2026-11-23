@@ -1,0 +1,41 @@
+/* Seeed XIAO nRF52840: TMP117 on the XIAO I2C pins (D4 SDA, D5 SCL),
+ * button on D1 to ground, wear log on the storage partition. */
+
+/ {
+	aliases {
+		sw0 = &brace_button;
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+		brace_button: button_0 {
+			gpios = <&xiao_d 1 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "Read-out button";
+		};
+	};
+
+	fstab {
+		compatible = "zephyr,fstab";
+		lfs: lfs {
+			compatible = "zephyr,fstab,littlefs";
+			mount-point = "/lfs";
+			partition = <&storage_partition>;
+			automount;
+			read-size = <16>;
+			prog-size = <16>;
+			cache-size = <64>;
+			lookahead-size = <32>;
+			block-cycles = <512>;
+		};
+	};
+};
+
+&xiao_i2c {
+	status = "okay";
+	clock-frequency = <I2C_BITRATE_FAST>;
+
+	tmp117: tmp117@48 {
+		compatible = "ti,tmp11x";
+		reg = <0x48>;
+	};
+};
