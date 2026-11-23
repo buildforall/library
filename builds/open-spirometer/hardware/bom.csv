@@ -1,0 +1,14 @@
+ref,qty,part,notes,unit_usd
+U1,1,ESP32-C3 SuperMini,"Microcontroller board, USB-C, onboard 3V3 LDO",3.00
+U9,1,TP4056 USB-C module,1 A Li-ion charger with DW01 protection,0.60
+BT1,1,LiPo cell 3.7 V 400 mAh,With JST-PH lead,3.20
+SW1,1,SS12D00 slide switch,Main power,0.10
+"R8, R9",2,100 kΩ resistor,Battery voltage divider to GPIO0,0.02
+U2,1,Sensirion SDP810-500Pa,"Differential pressure, I²C, with tube ports",30.00
+U3,1,SSD1306 OLED 0.96 in,"128×64, I²C",2.50
+Mech,1,"Stainless mesh disc, 400 mesh, Ø30 mm",Flow resistance,1.20
+Mech,2,"Silicone tube 3 mm ID, 6 cm",Pressure taps to sensor,0.20
+Mech,1,Cardboard mouthpiece 30 mm,"Single-use, per patient",0.10
+SW2,1,12 mm tactile switch,,0.10
+LS1,1,Passive piezo buzzer 12 mm,,0.30
+Mech,1,PETG print,Flow head and body,1.80
