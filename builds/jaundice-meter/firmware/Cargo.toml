@@ -1,0 +1,35 @@
+[package]
+name = "jaundice-meter"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Transcutaneous jaundice meter firmware for the ESP32-C3"
+
+[[bin]]
+name = "jaundice-meter"
+path = "src/main.rs"
+test = false
+bench = false
+
+[dependencies]
+esp-hal = { version = "1.2", features = ["esp32c3", "unstable"] }
+esp-backtrace = { version = "0.20", features = ["esp32c3", "panic-handler", "println"] }
+esp-println = { version = "0.18", features = ["esp32c3", "log-04"] }
+esp-bootloader-esp-idf = { version = "0.6", features = ["esp32c3"] }
+esp-storage = { version = "0.10", features = ["esp32c3"] }
+embedded-hal = "1.0"
+embedded-hal-bus = "0.3"
+embedded-graphics = "0.8"
+ssd1306 = "0.10"
+libm = "0.2"
+heapless = "0.8"
+nb = "1.1"
+
+[profile.dev]
+opt-level = "s"
+
+[profile.release]
+opt-level = "s"
+lto = "fat"
+codegen-units = 1
+debug = 2
