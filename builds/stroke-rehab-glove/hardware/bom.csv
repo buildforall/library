@@ -1,0 +1,13 @@
+ref,qty,part,notes,unit_usd
+U1,1,ESP32-S3 SuperMini,"Microcontroller board, USB-C, onboard RGB LED",5.50
+U9,1,TP4056 USB-C module,1 A Li-ion charger with DW01 protection,0.60
+BT1,1,LiPo cell 3.7 V 500 mAh,With JST-PH lead,3.50
+SW1,1,SS12D00 slide switch,Main power,0.10
+"R8, R9",2,100 kΩ resistor,Battery divider to GPIO7,0.02
+FS1–FS5,5,Flex sensor 2.2 in,Bend-sensitive resistor,3.50
+R1–R5,5,47 kΩ resistor,Divider per finger,0.02
+U2,1,LSM6DS3TR-C breakout,"6-axis IMU, I²C",3.50
+SW2,1,6 mm tactile switch,,0.05
+Mech,1,Cotton glove + sewn sensor sleeves,Machine-washable with pod removed,2.00
+Mech,1,"Ribbon cable 7-way, 15 cm",Sensors to pod,0.40
+Mech,1,PETG print,Hand pod,0.50
